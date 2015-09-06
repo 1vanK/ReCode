@@ -41,7 +41,7 @@ class ReCode : Form
 		list.AllowDrop = true;
 		list.SelectionMode = SelectionMode.MultiExtended;
 		oldCode.DropDownStyle = newCode.DropDownStyle = ComboBoxStyle.DropDownList;
-		ListItem[] listItems = new ListItem[] { new ListItem(1251, "Windows"), new ListItem(866, "Dos"), new ListItem(20866, "Unix") };
+		ListItem[] listItems = new ListItem[] { new ListItem(1251, "Windows"), new ListItem(866, "Dos"), new ListItem(20866, "Unix"), new ListItem(65001, "UTF-8") };
 		oldCode.Items.AddRange(listItems);
 		newCode.Items.AddRange(listItems);
 		oldCode.SelectedIndex = newCode.SelectedIndex = 0;
